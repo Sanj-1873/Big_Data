@@ -1,5 +1,5 @@
 # Big_Data
-This project is meant to simulate the master worker schduling on your local machine
+This project is meant to simulate the master worker scheduling on your local machine
 
 The Master process has 2 threads- one to listen for job requests, and another to listen for updates from Workers . Each Worker has 2 threads-one for listening for task launch messages from Master, and another to simulate the execution of the tasks and to send updates to the Master.
 
