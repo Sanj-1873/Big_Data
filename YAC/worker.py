@@ -157,7 +157,7 @@ def execution_of_tasks(worker):
         for i in range(worker.slots):
             if (isinstance(worker.exec_pool[i], int) and worker.exec_pool[i] == 0):
                 continue
-            elif (worker.exec_pool[i].time_left):
+            elif (worker.exec_pool[i].time_left==0):
                 task = worker.exec_pool[i]
                 job_id = task.job_id
                 task_id = task.task_id
